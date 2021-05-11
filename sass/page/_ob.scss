@@ -1,0 +1,417 @@
+// 子ページヘッダー-------
+.blue-header {
+    @include blue-header;
+}
+
+.blue-gnav {
+    @include blue-gnav;
+}
+
+.blue-slash {
+    @include blue-slash;
+}
+
+.ob__header {
+    @include child-header;
+}
+
+// 子ページヘッダー終わり------
+
+// この下から卒業生ページのCSSになります
+
+.ob__main {
+    width: 100%;
+    background: $bg-gray;
+    color: #2e2e2e;
+}
+
+.ob__wrap {
+    margin-bottom: 250px;
+    margin-left: auto;
+    width: 90%;
+    
+    position: relative;
+    display: block;
+    
+
+    &--box {
+        position: absolute;
+        display: inline-block;
+        top: -80px;
+        &--unit {
+            display: flex;
+            justify-content: space-between;
+
+            &--top {
+                width: 23%;
+                &--ttl {
+                    @include top-ttl;
+
+                    &--sub {
+                        @include top-white-back;
+                        background-color: #fff;
+                    }
+                }
+
+                &--txt {
+                    padding-top: 80px;
+                    @include font(1.25rem, 400);
+                    letter-spacing: 0.1rem;
+                    line-height: 2.5;
+                }
+
+            }
+        }
+    }
+
+
+}
+
+
+
+
+.ob__sec--box {
+    padding-top: 800px;
+}
+
+.ob__sec--box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.ob__sec1 {
+    width: 100%;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+
+        &--txt1 {
+            font-size: 20px;
+            letter-spacing: 50rem;
+            padding-bottom: 60px;
+
+        }
+
+        &--txt2 {
+            font-size: 24px;
+            letter-spacing: 50rem;
+            padding-bottom: 10px;
+
+        }
+
+        &--txt3 {
+            font-size: 42px;
+            letter-spacing: 50rem;
+            padding-bottom: 30px;
+
+            &--small {
+                font-size: 20px;
+            }
+
+        }
+
+        &--txt4 {
+            font-size: 20px;
+            letter-spacing: 70rem;
+            line-height: 3rem;
+
+
+        }
+    }
+
+
+}
+
+.ob__sec2 {
+    width: 100%;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+
+        &--txt1 {
+            font-size: 20px;
+            letter-spacing: 50rem;
+            padding-bottom: 60px;
+
+        }
+
+        &--txt2 {
+            font-size: 24px;
+            letter-spacing: 50rem;
+            padding-bottom: 10px;
+
+        }
+
+        &--txt3 {
+            font-size: 42px;
+            letter-spacing: 50rem;
+            padding-bottom: 30px;
+
+            &--small {
+                font-size: 20px;
+            }
+
+        }
+
+
+        &--txt4 {
+            font-size: 20px;
+            letter-spacing: 70rem;
+            line-height: 3rem;
+
+
+
+
+
+        }
+    }
+}
+
+.ob__sec3 {
+    width: 100%;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+
+        &--txt1 {
+            font-size: 20px;
+            letter-spacing: 50rem;
+            padding-bottom: 60px;
+
+        }
+
+        &--txt2 {
+            font-size: 24px;
+            letter-spacing: 50rem;
+            padding-bottom: 10px;
+
+        }
+
+        &--txt3 {
+            font-size: 42px;
+            letter-spacing: 50rem;
+            padding-bottom: 30px;
+
+            &--small {
+                font-size: 20px;
+            }
+
+        }
+
+        &--txt4 {
+            font-size: 20px;
+            letter-spacing: 70rem;
+            line-height: 3rem;
+
+
+
+
+
+
+        }
+    }
+}
+
+
+.ob__sec4 {
+    width: 100%;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+
+        &--txt1 {
+            font-size: 20px;
+            letter-spacing: 50rem;
+            padding-bottom: 60px;
+
+        }
+
+        &--txt2 {
+            font-size: 24px;
+            letter-spacing: 50rem;
+            padding-bottom: 10px;
+
+        }
+
+        &--txt3 {
+            font-size: 42px;
+            letter-spacing: 50rem;
+            padding-bottom: 30px;
+
+            &--small {
+                font-size: 20px;
+            }
+
+        }
+
+        &--txt4 {
+            font-size: 20px;
+            letter-spacing: 70rem;
+            line-height: 3rem;
+
+
+
+
+
+
+        }
+    }
+}
+
+
+.ob__sec5 {
+    width: 100%;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+
+        &--txt1 {
+            font-size: 20px;
+            letter-spacing: 50rem;
+            padding-bottom: 60px;
+
+        }
+
+        &--txt2 {
+            font-size: 24px;
+            letter-spacing: 50rem;
+            padding-bottom: 10px;
+
+        }
+
+        &--txt3 {
+            font-size: 42px;
+            letter-spacing: 50rem;
+            padding-bottom: 30px;
+
+            &--small {
+                font-size: 20px;
+            }
+
+        }
+
+        &--txt4 {
+            font-size: 20px;
+            letter-spacing: 70rem;
+            line-height: 3rem;
+
+
+
+
+
+
+        }
+    }
+}
+
+.ob__sec6 {
+    width: 100%;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    &--box {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+
+        &--txt1 {
+            font-size: 20px;
+            letter-spacing: 50rem;
+            padding-bottom: 60px;
+
+        }
+
+        &--txt2 {
+            font-size: 24px;
+            letter-spacing: 50rem;
+            padding-bottom: 10px;
+
+        }
+
+        &--txt3 {
+            font-size: 42px;
+            letter-spacing: 50rem;
+            padding-bottom: 30px;
+
+            &--small {
+                font-size: 20px;
+            }
+
+        }
+
+        &--txt4 {
+            font-size: 20px;
+            letter-spacing: 70rem;
+            line-height: 3rem;
+
+
+
+
+
+
+        }
+
+    }
+}
+
+// 文字大きさ設定設定
+[class*=ob__][class*=txt1] {
+    @include font(1.25rem, 500);
+    letter-spacing: 0.15rem;
+    position: relative;
+    display: inline-block;
+    &::after {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        right: 0;
+        bottom: 37px;
+        background-color: #2e2e2e;
+
+    }
+}
+
+[class*=ob__][class*=txt2] {
+    @include font(1.5rem);
+    letter-spacing: 0.15rem;
+}
+
+[class*=ob__][class*=txt3] {
+    @include font(2.625rem);
+    letter-spacing: 0.08rem;
+}
+
+[class*=ob__][class*=small] {
+    @include font(1.5rem);
+    letter-spacing: 0.08rem;
+}
+
+[class*=ob__][class*=txt4] {
+    @include font(1.25rem, 400);
+    letter-spacing: 0.08rem;
+}
+
+

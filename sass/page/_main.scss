@@ -1,0 +1,768 @@
+// 子ページヘッダー-------
+.blue-header {
+    @include blue-header;
+}
+
+.blue-gnav {
+    @include blue-gnav;
+}
+
+.blue-slash {
+    @include blue-slash;
+}
+
+.main__header {
+    @include child-header;
+}
+
+// 子ページヘッダー終わり------
+
+
+// top説明部分
+.main__intro {
+    margin-bottom: 300px;
+    padding-top: 200px;
+    width: 100%;
+    color: #2e2e2e;
+
+
+    &--wrap {
+        margin: 0 20% 0 10%;
+        width: 75%;
+        position: relative;
+
+        &--ttl1 {
+            position: absolute;
+            display: block;
+            top: -50px;
+            right: 100px;
+            // margin-bottom: 43px;
+            @include top-ttl;
+            line-height: 2;
+
+            &--span {
+                @include top-white-back;
+            }
+
+        }
+
+        &--ttl2 {
+            position: absolute;
+            display: block;
+            top: 50px;
+            right: 357px;
+            // margin-bottom: 43px;
+            @include top-ttl;
+            line-height: 2;
+
+            &--span {
+                @include top-white-back;
+            }
+        }
+
+        &--box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &--txt {
+                width: 28%;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+            }
+        }
+    }
+
+}
+
+// learn_学べる事
+.main__learn {
+    width: 100%;
+    color: #2e2e2e;
+
+    &--top {
+        width: 82%;
+        margin-left: 18%;
+        margin-bottom: 250px;
+        display: flex;
+        justify-content: space-between;
+
+
+        &--box {
+            width: 40%;
+            color: #2e2e2e;
+
+            &--ttl {
+                // padding-top: 260px;
+                margin-bottom: 43px;
+                @include font(3.1rem, 700);
+                letter-spacing: 0.4rem;
+                line-height: 1.4;
+                @include ttl-left-border();
+            }
+
+            &--sub {
+                margin-bottom: 100px;
+                @include font();
+                letter-spacing: 0.15rem;
+            }
+
+            &--txt {
+                width: 100%;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+            }
+        }
+    }
+
+    // ここからLEARNING 一覧
+    &--wrap {
+        width: 66%;
+        margin: 0 auto;
+
+
+        &--container {
+            margin-bottom: 300px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            // 青のアイコンボックス
+            &--box {
+                padding: 134px 0;
+                width: 50%;
+                height: 80%;
+                background-color: $blue;
+
+                // アイコン
+                &--icon {
+                    width: 65px;
+                    height: 65px;
+                    margin: 0 auto 55px;
+
+                    &--img {
+                        width: 100%;
+                    }
+                }
+
+                // 英語タイトル
+                &--ttl {
+                    margin-bottom: 18px;
+                    text-align: center;
+                    @include font(2.5rem);
+                    letter-spacing: 0.36rem;
+                    color: #fff;
+                }
+
+                // カタカナふりがな
+                &--sub {
+                    text-align: center;
+                    @include font(0.93rem);
+                    letter-spacing: 0.36rem;
+                    color: #fff;
+                }
+
+            }
+
+            // 右のテキストボックス
+            &--unit {
+                width: 45%;
+
+                &--ttl {
+                    margin-bottom: 30px;
+                    @include font(2.1875rem);
+                    letter-spacing: 0.15rem;
+                    line-height: 2;
+                }
+
+                &--txt {
+
+                    margin-bottom: 45px;
+                    @include font(1.25rem, 400);
+                    letter-spacing: 0.1rem;
+                    line-height: 2.5;
+                }
+
+                &--bottom {
+                    width: 100%;
+
+                    &--txt {
+                        display: inline-block;
+                        margin-left: 50px;
+                        margin-bottom: 30px;
+                        @include font(0.9375rem);
+                        letter-spacing: 0.15rem;
+                        @include ttl-left-border(36px, -47px);
+
+                    }
+
+                    &--list {
+                        width: 100%;
+                        height: 100px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-content: space-between;
+
+                        &--item {
+                            padding: 10px 0;
+                            width: 47%;
+                            border-radius: 5px;
+                            text-align: center;
+                            background-color: $bg-gray;
+
+                            @include font(1rem, 500);
+                            letter-spacing: 0.05rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// クラウドツールマージンボト
+.main__learn--wrap4 {
+    margin-bottom: 200px;
+}
+
+
+
+// ★ 6ヶ月間の流れ_curri
+.main__curri {
+    // padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+    background: $bg-gray;
+    color: #2e2e2e;
+
+    // topの説明部分
+    &--top {
+        width: 72%;
+        margin-left: 18%;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+
+        // 大見出し英語・日本語
+        &--box {
+            width: 40%;
+            color: #2e2e2e;
+
+            &--ttl {
+                margin-top: 260px;
+                margin-bottom: 43px;
+                @include font(3.1rem, 700);
+                letter-spacing: 0.4rem;
+                line-height: 1.4;
+                @include ttl-left-border();
+            }
+
+            &--sub {
+                margin-bottom: 100px;
+                @include font();
+                letter-spacing: 0.15rem;
+            }
+
+            &--txt {
+                width: 100%;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+            }
+        }
+
+
+        &--pic {
+            padding-top: 120px;
+        }
+    }
+
+    // ここから６か月の図
+    //   コンテンツ幅右寄せ
+    &--wrap {
+        width: 64%;
+        height: auto;
+        margin-left: 26%;
+        position: relative;
+
+        &::before {
+            content: url("../images/main/main_curriculum.svg");
+            position: absolute;
+            display: inline-block;
+            left: -347px;
+            top: 12px;
+        }
+
+
+        // menu1_BACIC 基礎学習
+        &--menu1 {
+            margin-bottom: 275px;
+            width: 100%;
+
+            // タイトル青文字
+            &--top {
+                margin-left: 60px;
+                margin-bottom: 80px;
+                display: inline-block;
+
+                &--ttl {
+                    margin-bottom: 25px;
+                    @include font(3.12rem, 300);
+                    letter-spacing: 0.25rem;
+                    color: $blue;
+                }
+
+                &--ttlsmall {
+                    @include font(1.25rem, 300);
+                    letter-spacing: 0.1rem;
+                    color: $blue;
+                }
+
+            }
+
+            // テキストボックス
+            &--box {
+                width: 100%;
+                height: 380px;
+                background-color: #fff;
+
+                &--unit {
+                    margin: auto auto;
+                    width: 90%;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    /* Safari用 */
+                    transform: translateY(-50%);
+
+                    &--txt {
+                        margin-bottom: 60px;
+                        @include font(1.25rem, 400);
+                        line-height: 2.5;
+                        letter-spacing: 0.02rem;
+                    }
+
+                    // 青見出し 訓練科目
+                    &--subject1 {
+                        display: inline-block;
+                        margin-bottom: 25px;
+                        padding: 10px 15px;
+                        background-color: $blue;
+                        @include font(1.06rem, 500);
+                        letter-spacing: 0.15rem;
+                        color: #fff;
+                    }
+
+                    // 小文字　訓練科目内容
+                    &--subject2 {
+                        @include font(1.06rem, 400);
+                        letter-spacing: 0.1rem;
+                    }
+
+                }
+
+            }
+        }
+
+        // menu1とmenu2の間の画像
+        &--pic1 {
+            margin-left: 24%;
+            margin-bottom: 65px;
+        }
+
+        // menu2_APPLIED 応用学習
+        &--menu2 {
+            margin-bottom: 275px;
+            width: 100%;
+            display: flex;
+
+            &--container {
+                width: 100%;
+
+                &--top {
+                    margin-left: 60px;
+                    margin-bottom: 83px;
+
+                    &--ttl {
+                        margin-bottom: 25px;
+                        @include font(3.12rem, 300);
+                        letter-spacing: 0.25rem;
+                        color: $blue;
+                    }
+
+                    &--ttlsmall {
+                        @include font(1.25rem, 300);
+                        letter-spacing: 0.1rem;
+                        color: $blue;
+                    }
+                }
+
+                // テキストボックス
+                &--box {
+                    width: 90%;
+                    height: 520px;
+                    background-color: #fff;
+
+                    &--unit {
+                        margin: auto auto;
+                        width: 83%;
+                        position: relative;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        /* Safari用 */
+                        transform: translateY(-50%);
+
+                        &--txt {
+                            margin-bottom: 60px;
+                            @include font(1.25rem, 400);
+                            line-height: 2.5;
+                            letter-spacing: 0.02rem;
+                        }
+
+                        // 青見出し 訓練科目
+                        &--subject1 {
+                            display: inline-block;
+                            margin-bottom: 25px;
+                            padding: 10px 15px;
+                            background-color: $blue;
+                            @include font(1.06rem, 500);
+                            letter-spacing: 0.15rem;
+                            color: #fff;
+                        }
+
+                        // 小文字　訓練科目内容
+                        &--subject2 {
+                            @include font(1.06rem, 400);
+                            letter-spacing: 0.1rem;
+                            line-height: 1.7;
+                        }
+
+                    }
+
+                }
+
+
+            }
+        }
+
+        &--picwrap {
+            margin-bottom: 130px;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            align-items: flex-end;
+        }
+
+        // menu3_PRODUCTION 基礎学習
+
+        &--menu3 {
+            margin-bottom: 275px;
+            padding-bottom: 240px;
+            width: 100%;
+
+            // タイトル青文字
+            &--top {
+                margin-left: 60px;
+                margin-bottom: 82px;
+
+                &--ttl {
+                    margin-bottom: 25px;
+                    @include font(3.12rem, 300);
+                    letter-spacing: 0.25rem;
+                    color: $blue;
+                }
+
+                &--ttlsmall {
+                    @include font(1.25rem, 300);
+                    letter-spacing: 0.1rem;
+                    color: $blue;
+                }
+
+            }
+
+            // テキストボックス
+            &--box {
+                width: 100%;
+                height: 380px;
+                background-color: #fff;
+
+                &--unit {
+                    margin: auto auto;
+                    width: 90%;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    /* Safari用 */
+                    transform: translateY(-50%);
+
+                    &--txt {
+                        margin-bottom: 60px;
+                        @include font(1.25rem, 400);
+                        line-height: 2.5;
+                        letter-spacing: 0.02rem;
+                    }
+
+                    // 青見出し 訓練科目
+                    &--subject1 {
+                        display: inline-block;
+                        margin-bottom: 25px;
+                        padding: 10px 15px;
+                        background-color: $blue;
+                        @include font(1.06rem, 500);
+                        letter-spacing: 0.15rem;
+                        color: #fff;
+                    }
+
+                    // 小文字　訓練科目内容
+                    &--subject2 {
+                        @include font(1.06rem, 400);
+                        letter-spacing: 0.1rem;
+                        line-height: 1.7;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
+
+
+// 職業人講和と資格取得
+.main__foot {
+    width: 66%;
+    margin: 0 auto;
+
+    color: #2e2e2e;
+
+    // 職業人講和
+    &--talk {
+        margin-bottom: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: solid 1px $blue;
+
+        // 左のテキストボックス
+        &--box {
+            margin: 0 auto;
+            padding: 60px 0;
+            width: 50%;
+
+
+            &--unit {
+                width: 78%;
+                height: 527px;
+                margin: 0 auto;
+
+                // タイトル部分ボックス
+                &--top {
+                    margin-bottom: 65px;
+                    margin-left: 21%;
+
+                    &--ttl {
+                        margin-bottom: 25px;
+                        @include font(2.5rem);
+                        letter-spacing: 0.4rem;
+                        line-height: 1.2;
+                        color: $blue;
+                        @include ttl-left-border(74px, -105px);
+
+                        &::before {
+                            top: 30%;
+                            background-color: $blue;
+                        }
+
+                    }
+
+                    &--sub {
+                        @include font(1.25rem);
+                        letter-spacing: 0.4rem;
+                        color: $blue;
+                    }
+
+                }
+
+                // 本文
+                &--txt {
+                    margin-bottom: 65px;
+                    @include font(1.25rem, 400);
+                    letter-spacing: 0.05rem;
+                    line-height: 2.5;
+
+                }
+
+                &--button {
+                    width: 100%;
+                    border: solid 1px $blue;
+
+                    &--link {
+                        padding: 20px 0;
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        @include font(1.25rem);
+                        letter-spacing: 0.18rem;
+                        color: $blue;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            display: inline-block;
+                            position: absolute;
+                            width: 8px;
+                            height: 8px;
+                            top: 26px;
+                            right: 55px;
+                            
+                            border-top: solid 2px $blue;
+                            border-right: solid 2px $blue;
+                            transform: rotate(45deg);
+
+
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+        // 右のイメージ画像
+        &--images {
+            width: 50%;
+            text-align: center;
+
+            &--pic {
+                padding: 65px 0 63px;
+                width: 74%;
+                margin: 0 12% 0 14%;
+            }
+        }
+
+    }
+
+    // 資格取得/ 
+
+    &--license {
+        margin-bottom: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border: solid 1px $blue;
+
+        // 左のテキストボックス
+        &--box {
+            margin: 0 auto;
+            padding: 60px 0;
+            width: 50%;
+
+
+            &--unit {
+                width: 78%;
+                height: 527px;
+                margin: 0 auto;
+
+                // タイトル部分ボックス
+                &--top {
+                    margin-left: 21%;
+                    margin-bottom: 65px;
+
+                    &--ttl {
+                        margin-bottom: 25px;
+                        @include font(2.5rem);
+                        letter-spacing: 0.4rem;
+                        line-height: 1.2;
+                        color: $blue;
+                        @include ttl-left-border(74px, -105px);
+
+                        &::before {
+                            top: 30%;
+                            background-color: $blue;
+                        }
+
+                    }
+
+                    &--sub {
+                        @include font(1.25rem);
+                        letter-spacing: 0.4rem;
+                        color: $blue;
+                    }
+
+                }
+
+                // 本文
+                &--txt {
+                    margin-bottom: 35px;
+                    text-align: center;
+                    @include font(1.25rem, 400);
+                    letter-spacing: 0.05rem;
+
+                }
+
+                &--list {
+                    margin-bottom: 40px;
+                    text-align: center;
+                    @include font(1.25rem, 700);
+                    letter-spacing: 0.05rem;
+                    line-height: 1.5;
+                }
+
+                &--button {
+                    width: 100%;
+                    border: solid 1px $blue;
+
+                    &--link {
+                        padding: 20px 0;
+                        width: 100%;
+                        display: block;
+                        text-align: center;
+                        @include font(1.25rem);
+                        letter-spacing: 0.18rem;
+                        color: $blue;
+
+                        &::after {
+                            content: "";
+                            display: inline-block;
+                            margin: 0 0 3px 5px;
+                            width: 20px;
+                            height: 20px;
+                            vertical-align: middle;
+                            background-image: url('../images/icon/main/main-icon-external-link-b.svg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        // 右のイメージ画像
+        &--images {
+            width: 50%;
+            text-align: center;
+
+            &--pic {
+                padding: 65px 0 63px;
+                width: 74%;
+                margin: 0 12% 0 14%;
+            }
+        }
+
+    }
+}
+
+.main__banner {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+

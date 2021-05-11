@@ -1,0 +1,95 @@
+// 子ページヘッダー-------
+.blue-header {
+    @include blue-header;
+}
+
+.blue-gnav {
+    @include blue-gnav;
+}
+
+.blue-slash {
+    @include blue-slash;
+}
+
+.form__header {
+    @include child-header;
+}
+
+// 子ページヘッダー終わり------
+
+// ここからコンテンツ
+
+.form__wrap {
+    padding-top: 140px;
+    width: 100%;
+    color: #2e2e2e;
+}
+
+.form__wrap--top--ttl {
+    margin-bottom: 100px;
+    text-align: center;
+    @include font(1.25rem, 400);
+    letter-spacing: 0.02rem;
+    line-height: 2;
+}
+
+.form {
+    width: 35%;
+    margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__wrap--box--txt {
+    @include font(1.25rem, 500);
+    padding-bottom: 20px;
+}
+
+.form__span {
+    color: #e43b3b;
+    margin-left: 2px;
+}
+
+
+input {
+    width: 590px;
+    height: 60px;
+    margin-bottom: 65px;
+    font-size: 20px;
+    border: 1px solid #2e2e2e;
+}
+
+textarea {
+    width: 590px;
+    height: 230px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    border: 1px solid #2e2e2e;
+}
+
+
+// 送信ボタン
+.form__box {
+    position: relative;
+    margin-bottom: 300px;
+    width: 200px;
+    height: 50px;
+    background: #4e9bcb;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.form__box--submit {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    padding: 3px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    @include font(1.25rem,500);
+    // letter-spacing: 20px;
+}

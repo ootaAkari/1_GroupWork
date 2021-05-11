@@ -1,0 +1,279 @@
+// サイトの中で一番小さいコンテンツ幅を中央寄せする
+@mixin inner($width: 66%) {
+    width: $width;
+    margin: 0 auto;
+}
+
+
+// フォント
+@mixin font($size:1rem, $weight:700) {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+
+// メインカラー
+$blue: #4E9bcb;
+// 背景グレーカラー
+$bg_gray: #e3e7e975;
+
+
+@mixin glay {
+    background: (#E3E7E9, 0.3);
+}
+
+// 子ページ青のヘッダー
+@mixin blue-header {
+    width: 100%;
+    height: 120px;
+    background-color: $blue;
+    position: fixed;
+    z-index: 2;
+    display: block;
+
+    &__wrap {
+        margin: 0 auto;
+        width: 85%;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+}
+
+@mixin blue-gnav {
+    width: 66%;
+    @include font();
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            opacity: 0.85;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+
+        &--img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+@mixin blue-slash {
+    position: relative;
+
+    &::before {
+        content: "/";
+        color: #fff;
+        position: absolute;
+        left: -35px;
+        bottom: 6px;
+    }
+
+}
+
+
+// 子ページタイトルのヘッダー
+@mixin child-header {
+    padding: 240px 0 75px;
+    background-color: $blue;
+
+    &--wrap {
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        &--icon {
+            margin: 0 auto 50px;
+            width: 45px;
+
+            &--img {
+                width: 100%;
+            }
+        }
+
+        &--ttl {
+            margin-bottom: 35px;
+            @include font(2.2rem);
+            letter-spacing: 0.2em;
+            text-align: center;
+            color: #fff;
+
+        }
+
+        &--lead {
+            @include font(0.9rem);
+            letter-spacing: 0.3em;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+
+
+// トップページの白見出し文字大きさ
+@mixin top-ttl {
+    @include font(3.1rem);
+    letter-spacing: 0.9rem;
+    line-height: 2;
+}
+
+//トップページ白見出し白背景
+@mixin top-white-back {
+    background: #fff;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    vertical-align: middle;
+}
+
+@mixin top-number-txt {
+    @include font(1.8rem);
+    letter-spacing: 0.2rem;
+}
+
+
+// 各ページの英語+日本語大見出しの左横線
+@mixin ttl-left-border($width: 110px, $left: -155px) {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        // padding: 1px 0;
+        width: $width;
+        height: 1px;
+        left: $left;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        background-color: #2e2e2e;
+    }
+}
+
+
+// ホバー時に色薄くする
+.hover {
+    &:hover {
+        opacity: 0.85;
+    }
+}
+
+// クリックしたら色元に戻る
+.active {
+    &:active {
+        opacity: 1;
+    }
+}
+
+
+// morelink 装飾{
+
+.more {
+    @include font(1rem, 500);
+    letter-spacing: 0.08rem;
+    color: #2e2e2e;
+
+    &--link {
+        position: relative;
+        color: #2e2e2e;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            // padding: 1px 0;
+            width: 170px;
+            height: 1px;
+            // left: -80px;
+            top: 13px;
+            left: 100px;
+            background-color: #2e2e2e;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            // margin: 0 3px 0 8px;
+            width: 10px;
+            height: 10px;
+            top: 8px;
+            left: 263px;
+            border: 1px solid #2e2e2e;
+            border-radius: 100%;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+}
+
+// more view 以外のリンクの装飾
+@mixin more-link-plus($line-left: 100px, $circle-left: 263px) {
+    @include font(1rem, 500);
+    letter-spacing: 0.08rem;
+    color: #2e2e2e;
+
+    &--link {
+        position: relative;
+        color: #2e2e2e;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            // padding: 1px 0;
+            width: 170px;
+            height: 1px;
+            // left: -80px;
+            top: 13px;
+            left: $line-left;
+            background-color: #2e2e2e;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            // margin: 0 3px 0 8px;
+            width: 10px;
+            height: 10px;
+            top: 8px;
+            left: $circle-left;
+            border: 1px solid #2e2e2e;
+            border-radius: 100%;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+}

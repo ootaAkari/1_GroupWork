@@ -1,0 +1,55 @@
+.wrapper {
+    list-style-type: none;
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    position: fixed;
+    z-index: 2;
+
+    &__wrap {
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+.gnav {
+    width: 66%;
+    @include font();
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        color: #2e2e2e;
+        text-decoration: none;
+        &--img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+// スラッシュ
+.slash {
+    position: relative;
+
+    &::before {
+        content: "/";
+        position: absolute;
+        left: -35px;
+        bottom: 6px;
+    }
+}
+

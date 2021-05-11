@@ -1,0 +1,168 @@
+.footer {
+    height: auto;
+    background-color: $blue;
+    padding: 7% 17% 6%;
+
+    // 左の住所と右のナビ横並び
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // 左の住所
+    &__left {
+        width: 28%;
+
+        &--logo {
+            margin-bottom: 20px;
+            width: 60%;
+        }
+
+        &--unit {
+            &--ttl {
+                margin-bottom: 30px;
+                width: 100%;
+                @include font(1.06rem);
+                color: #fff;
+                letter-spacing: 0.15rem;
+            }
+
+            &--place {
+                margin-bottom: 30px;
+                @include font(1rem, 400);
+                color: #fff;
+                letter-spacing: 0.15rem;
+                line-height: 1.6;
+            }
+
+            &--time {
+                margin-bottom: 30px;
+                @include font(1rem, 400);
+                color: #fff;
+                letter-spacing: 0.15rem;
+            }
+
+            &--tell {
+                margin-bottom: 15px;
+                width: 100%;
+                @include font(1.06rem);
+                color: #fff;
+                letter-spacing: 0.15rem;
+            }
+
+            &--mail {
+                margin-bottom: 30px;
+                @include font(1.06rem, 400);
+                color: #fff;
+                letter-spacing: 0.14rem;
+            }
+
+            &--pic {
+                width: 30px;
+                height: 30px;
+
+                &--link {
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        opacity: 0.85;
+                    }
+
+                    &:active {
+                        opacity: 1;
+                    }
+
+                    &--img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    // 右の横並びナビ
+    &__right {
+        width: 63%;
+
+        &--nav {
+            display: flex;
+            justify-content: space-between;
+            @include font(1rem, bold);
+            letter-spacing: 0.15rem;
+
+            &--list {
+                &--link {
+                    color: #fff;
+                    border-bottom: 1px solid #fff;
+                    padding-bottom: 15px;
+
+                    &:hover {
+                        opacity: 0.85;
+                    }
+
+                    &:active {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    // 下部分
+    &__foot {
+        background-color: $blue;
+
+        &--txt {
+            &--small {
+                text-align: center;
+                @include font(0.8rem, 400);
+                color: #fff;
+            }
+
+            &--attention {
+                text-align: right;
+                @include font(0.8rem, 300);
+
+                &--link {
+                    color: #fff;
+
+                    &::after {
+                        content: "";
+                        display: inline-block;
+                        margin: 0 0 3px 5px;
+                        width: 14px;
+                        height: 14px;
+                        vertical-align: middle;
+                        background-image: url('../images/icon/main/main-icon-external-link-w.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+
+                    }
+
+                    &:hover {
+                        opacity: 0.85;
+                    }
+
+                    &:active {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+}

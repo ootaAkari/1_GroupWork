@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="815" height="3110.354" viewBox="0 0 815 3110.354">
+  <g id="グループ_688" data-name="グループ 688" transform="translate(-119 -1064.868)">
+    <line id="線_73" data-name="線 73" x1="1" y2="3003.61" transform="translate(326.766 1086.5)" fill="none" stroke="#4e9bcb" stroke-width="5"/>
+    <circle id="楕円形_16" data-name="楕円形 16" cx="21.132" cy="21.132" r="21.132" transform="translate(306.134 1064.868)" fill="#4e9bcb"/>
+    <g id="グループ_654" data-name="グループ 654" transform="translate(0 -5133)">
+      <rect id="長方形_351" data-name="長方形 351" width="160" height="46" transform="translate(119 6198)" fill="#fff"/>
+      <text id="_1_2ヶ月目" data-name="1〜2ヶ月目" transform="translate(129 6232)" fill="#4e9bcb" font-size="25" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="0">1〜2ヶ月目</tspan></text>
+    </g>
+    <g id="グループ_655" data-name="グループ 655" transform="translate(0 -3814)">
+      <rect id="長方形_351-2" data-name="長方形 351" width="160" height="46" transform="translate(119 6198)" fill="#fff"/>
+      <text id="_3_4ヶ月目" data-name="3〜4ヶ月目" transform="translate(129 6232)" fill="#4e9bcb" font-size="25" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="0">3〜4ヶ月目</tspan></text>
+    </g>
+    <g id="グループ_656" data-name="グループ 656" transform="translate(0 -2126)">
+      <rect id="長方形_351-3" data-name="長方形 351" width="160" height="46" transform="translate(119 6198)" fill="#fff"/>
+      <text id="_5_6ヶ月目" data-name="5〜6ヶ月目" transform="translate(129 6232)" fill="#4e9bcb" font-size="25" font-family="NotoSansJP-Medium, Noto Sans JP" font-weight="500" letter-spacing="0.1em"><tspan x="0" y="0">5〜6ヶ月目</tspan></text>
+    </g>
+    <path id="パス_439" data-name="パス 439" d="M3920.171,2610.334l141.379,79.723h255.287" transform="translate(-3594.171 -1522.334)" fill="none" stroke="#4e9bcb" stroke-width="1" stroke-dasharray="4 3"/>
+    <circle id="楕円形_19" data-name="楕円形 19" cx="21.132" cy="21.132" r="21.132" transform="translate(306.134 2383.868)" fill="#4e9bcb"/>
+    <circle id="楕円形_20" data-name="楕円形 20" cx="21.132" cy="21.132" r="21.132" transform="translate(306.134 4071.868)" fill="#4e9bcb"/>
+    <path id="パス_527" data-name="パス 527" d="M3920.171,2610.334l141.379,79.723h329.621" transform="translate(-3594.171 -203.334)" fill="none" stroke="#4e9bcb" stroke-width="1" stroke-dasharray="4 3"/>
+    <path id="パス_528" data-name="パス 528" d="M3920.171,2610.334l141.379,79.723h466.621" transform="translate(-3594.171 1484.666)" fill="none" stroke="#4e9bcb" stroke-width="1" stroke-dasharray="4 3"/>
+  </g>
+</svg>

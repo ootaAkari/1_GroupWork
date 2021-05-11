@@ -1,0 +1,268 @@
+// FAQ
+
+// 子ページヘッダー設定
+.blue-header {
+    @include blue-header;
+}
+
+.blue-gnav {
+    @include blue-gnav;
+}
+
+.blue-slash {
+    @include blue-slash;
+}
+
+// TOP設定
+.faq__header {
+    @include child-header;
+}
+
+// 子ページヘッダー設定おわり
+
+
+.faq__top {
+    margin-bottom: 110px;
+    padding-top: 140px;
+    width: 100%;
+    color: #2e2e2e;
+    position: relative;
+
+    &--tab {
+        // 右位置固定
+        position: absolute;
+        right: 0;
+        bottom: 0%;
+        z-index: 2;
+        // スクロール固定
+        position: fixed;
+
+        &--link {
+            width: 110px;
+            padding: 24px 10px;
+            display: inline-block;
+            // text-align: center;
+            background-color: $blue;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            // テキストと矢印真ん中揃え
+            // display: flex;
+
+            &--txt {
+                margin-left: 20px;
+                width: 40%;
+                text-align: center;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.2rem;
+            }
+
+            &--item {
+                width: 25%;
+                position: relative;
+                display: inline-block;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                   width: 6px;
+                    height: 6px;
+                    left: 0;
+                    border: 0px;
+                    border-top: solid 2px #fff;
+                    border-right: solid 2px #fff;
+                    transform: rotate(-45deg);
+                    // margin-top: 25px;
+
+
+                }
+            }
+        }
+    }
+
+
+    // トップテキスト
+    &--txt {
+        margin-bottom: 30px;
+        text-align: center;
+        @include font(1.25rem, 400);
+        letter-spacing: 0.02rem;
+        line-height: 2;
+    }
+
+    // ３つの質問に飛ぶ内部リンク
+    &--wrap {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+
+        &--button {
+            width: 45%;
+            margin: 70px 30px;
+            display: inline-block;
+            text-align: center;
+            @include font(1.25rem, 500);
+            letter-spacing: 0.2em;
+            line-height: 1.45;
+
+
+            &--link {
+                display: block;
+                padding: 20px;
+                background: $blue;
+                color: #fff;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    top: 10px;
+                    right: 30px;
+                    border: 0px;
+                    border-top: solid 2px #fff;
+                    border-right: solid 2px #fff;
+                    transform: rotate(135deg);
+                    margin-top: 20px;
+                }
+
+
+            }
+
+        }
+
+    }
+}
+
+// FAQ一覧
+.faq__wrap {
+    width: 100%;
+    background-color: $bg-gray;
+    color: #2e2e2e;
+    
+
+    // 職業訓練に関する質問
+    &--main {
+        margin: 0 auto;
+        padding: 110px 200px;
+        width: 88%;
+       
+
+        // 見出し
+        &--ttl {
+            margin-bottom: 130px;
+            text-align: center;
+            @include font(2.1875rem, 700);
+            letter-spacing: 0.15rem;
+        }
+
+        // 質問のユニット
+        &--unit {
+            margin-bottom: 90px;
+
+            &--q {
+                margin-bottom: 40px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                // カーソルをポインターに
+                cursor: pointer;
+
+                // &:hover {
+                //     opacity: 0.8;
+                // }
+                // &:active {
+                //     opacity: 1;
+                // }
+
+                // 横のクリック用十字(縦線)
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    width: 3px;
+                    height: 25px;
+                    right: 13.5px;
+                    background-color: $blue;
+                }
+
+                // 横のクリック用十字（横線）
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: inline-block;
+                    width: 25px;
+                    height: 3px;
+                    right: 3px;
+                    background-color: $blue;
+                }
+
+                // Qのアイコン
+                &--icon {
+                    width: 86px;
+                    height: 86px;
+                    padding-top: 30px;
+                    margin-right: 30px;
+                    display: inline-block;
+                    background-image: url('../images/icon/faq/faq-icon.svg');
+                    text-align: center;
+                    @include font(1.6rem);
+                    color: $blue;
+                }
+
+                &--ttl {
+                    display: block;
+                    @include font(1.56rem);
+                    letter-spacing: 0.08rem;
+                }
+
+            }
+
+            &--txt {
+                padding-left: 116px;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.02rem;
+                line-height: 2;
+                // display: none;
+            }
+
+        }
+
+        &--foot {
+            padding-top: 150px;
+            padding-bottom: 150px;
+
+            &--txt {
+                text-align: center;
+                @include font(2.18rem);
+                letter-spacing: 0.3rem;
+                line-height: 1.6;
+            }
+        }
+    }
+
+
+}
+
+
+// 項目ごとの区切りの横線
+.faq-top-border {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 1px;
+        top: -170px;
+        background-color: #2e2e2e;
+    }
+}

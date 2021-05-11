@@ -1,0 +1,880 @@
+// トップファーストビュー
+
+.top {
+    margin-bottom: 500px;
+    padding-top: 120px;
+    width: 100%;
+    height: auto;
+    color: #2e2e2e;
+
+
+    &__wrap {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        position: relative;
+
+        &--catch {
+            position: absolute;
+            top: 100px;
+            left: 115px;
+
+            &--ttl {
+                margin-bottom: 10px;
+                @include font(3.1rem, 700);
+                letter-spacing: 0.8rem;
+                line-height: 2.1;
+
+
+                // キャッチコピー白ベタ塗り
+                &--back {
+                    background: #fff;
+                    padding-left: 10px;
+                    padding-bottom: 2px;
+
+                }
+            }
+
+            &--txt {
+                @include font(1.1rem, 500);
+                letter-spacing: 0.25rem;
+                line-height: 3;
+                position: relative;
+                display: inline-block;
+                left: 80px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -80px;
+                    top: 25px;
+                    display: inline-block;
+                    width: 60px;
+                    height: 1px;
+                    background-color: #2e2e2e;
+                }
+            }
+        }
+
+    }
+
+
+    // 説明会のタブ
+    &__tab {
+        // 右位置固定
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 2;
+        // スクロール固定
+        position: fixed;
+
+        &--link {
+            width: 30px;
+            padding: 25px 7px;
+            writing-mode: vertical-rl;
+            background-color: $blue;
+
+            // テキストと矢印真ん中揃え
+            display: flex;
+            align-items: center;
+        }
+
+        &--txt {
+            @include font(1.06rem, 400);
+            letter-spacing: 0.4rem;
+            color: #fff;
+        }
+
+        // 矢印部分
+        &--item {
+            position: relative;
+
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 6px;
+                height: 6px;
+                border: 0px;
+                border-top: solid 2px #fff;
+                border-right: solid 2px #fff;
+                transform: rotate(135deg);
+                margin-top: 25px;
+
+
+            }
+        }
+
+
+    }
+}
+
+// WebStudySapporoについて
+.desc {
+    margin-bottom: 380px;
+    width: 100%;
+    height: 83vh;
+    background-color: $bg_gray;
+    background-position: top;
+    position: relative;
+    color: #2e2e2e;
+
+    &__top {
+        width: 80%;
+        margin-left: 20%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 1;
+        top: -300px;
+
+        &--wrap {
+            width: 35%;
+
+            &--ttl {
+                margin-bottom: 43px;
+                @include font(3.1rem, 700);
+                letter-spacing: 0.4rem;
+                line-height: 1.4;
+                // タイトル左横の装飾 横線
+                @include ttl-left-border();
+
+                &::before {
+                    top: 30%;
+                }
+            }
+
+            &--sub {
+                margin-bottom: 190px;
+                @include font();
+                letter-spacing: 0.15rem;
+                // line-height: 1.4;
+            }
+
+            &--txt {
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+            }
+        }
+
+    }
+
+    // ここがポイント
+    &__wrap {
+        width: 100%;
+        position: absolute;
+        top: 370px;
+        // position: relative;
+
+
+
+        &--box {
+            padding: 100px 0 10px 0;
+            margin: 0 auto;
+            width: 60%;
+            background-color: #fff;
+            position: relative;
+            display: block;
+
+            &::before {
+                display: inline-block;
+                content: "＼  ここがポイント  ／";
+                width: 100%;
+                margin: 0 auto;
+                position: absolute;
+                top: -50px;
+                @include font(2.1rem, 700);
+                text-align: center;
+                letter-spacing: 0.3rem;
+                line-height: 2.5;
+                color: #2e2e2e;
+
+
+
+
+
+            }
+
+            &--ttl {
+                margin-bottom: 95px;
+                @include font(2.1rem, 700);
+                text-align: center;
+                letter-spacing: 0.3rem;
+                line-height: 2.5;
+                color: #2e2e2e;
+            }
+
+            &--container {
+                margin: 0 12% 5%;
+                display: flex;
+                justify-content: space-between;
+
+
+                &--unit {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    &--pic {
+                        margin-bottom: 33px;
+                        width: 50px;
+                    }
+
+                    &--ttl {
+                        margin-bottom: 35px;
+                        @include font(1.5rem);
+                        letter-spacing: 0.1rem;
+                    }
+
+                    &--txt {
+                        @include font(1.2rem);
+                        text-align: center;
+                        letter-spacing: 0.02rem;
+                        line-height: 2.5;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+
+// chexk01 PC・スマホデザイン科
+.sec1 {
+    margin-bottom: 360px;
+    width: 100%;
+    height: 1295px;
+    position: relative;
+    color: #2e2e2e;
+
+    &__wrap {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+
+
+        &--ttl {
+            width: 40%;
+            height: auto;
+            position: absolute;
+            display: inline-block;
+            left: 9%;
+            top: -95px;
+            z-index: 1;
+
+            // ナンバリング横並び
+            &--box {
+                width: 92%;
+                margin-bottom: 440px;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                // 青ナンバーボックス
+                &--number {
+                    width: 206px;
+                    height: 206px;
+                    background-color: $blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &--check {
+
+                        @include font(1.7rem, 500);
+                        color: #fff;
+                        text-align: center;
+
+                    }
+
+                    &--num {
+                        @include font(5.5rem, 500);
+                        color: #fff;
+                        text-align: center;
+
+                    }
+                }
+
+                &--ttl {
+                    @include top-number-txt;
+                    padding-top: 43px;
+                }
+            }
+
+            &--catch {
+                @include top-ttl;
+
+                &--back {
+                    @include top-white-back;
+
+                }
+            }
+        }
+
+        &--pic1 {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            top: 50px;
+        }
+    }
+
+    &__box {
+        width: 77%;
+        margin-left: 23%;
+        margin-bottom: 200px;
+        padding-top: 760px;
+        display: flex;
+        justify-content: space-between;
+
+        &--unit {
+            width: 35%;
+
+            &--txt {
+                padding-top: 19%;
+                margin-bottom: 22%;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+            }
+        }
+
+    }
+}
+
+
+
+
+// 02 主な就職先
+.sec2 {
+    margin-bottom: 350px;
+    width: 100%;
+    height: 1295px;
+    position: relative;
+    color: #2e2e2e;
+
+    &__wrap {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+
+
+        &--ttl {
+            margin-left: 3%;
+            width: 40%;
+            height: auto;
+            position: absolute;
+            display: inline-block;
+            left: 12%;
+            top: -95px;
+            z-index: 1;
+
+            // ナンバリング横並び
+            &--box {
+                width: 58%;
+                margin-bottom: 130px;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                // 青ナンバーボックス
+                &--number {
+                    width: 206px;
+                    height: 206px;
+                    background-color: $blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &--check {
+
+                        @include font(1.7rem, 500);
+                        color: #fff;
+                        text-align: center;
+
+                    }
+
+                    &--num {
+                        @include font(5.5rem, 500);
+                        color: #fff;
+                        text-align: center;
+
+                    }
+                }
+
+                &--ttl {
+                    @include top-number-txt;
+                    padding-top: 70px;
+                }
+            }
+
+            &--catch {
+                @include top-ttl;
+
+                &--back {
+                    @include top-white-back;
+
+                }
+            }
+        }
+
+        &--pic1 {
+            margin-left: 22%;
+            position: absolute;
+            display: inline-block;
+            top: 50px;
+            z-index: 0;
+        }
+    }
+
+    &__box {
+        width: 65%;
+        margin-left: 11%;
+        margin-bottom: 300px;
+        padding-top: 620px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+
+        &--unit {
+            width: 45%;
+            padding-left: 50px;
+
+            &--txt {
+                padding-top: 19%;
+                margin-bottom: 22%;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+            }
+        }
+
+    }
+}
+
+
+
+
+// 03 卒業生の声
+.sec3 {
+    margin-bottom: 330px;
+    padding-top: 100px;
+    width: 100%;
+    height: 1295px;
+    position: relative;
+    color: #2e2e2e;
+
+    &__wrap {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: inline-block;
+
+
+        &--ttl {
+            width: 25%;
+            height: auto;
+            position: absolute;
+            display: inline-block;
+            left: 9%;
+            top: -95px;
+            z-index: 1;
+
+            &--catch {
+                @include top-ttl;
+
+                &--back {
+                    @include top-white-back;
+                }
+            }
+
+            // ナンバリング横並び
+            &--box {
+                width: 92%;
+                margin-bottom: 80px;
+                margin-top: 150px;
+                display: flex;
+                justify-content: space-between;
+                // align-items: center;
+
+                // 青ナンバーボックス
+                &--number {
+                    width: 206px;
+                    height: 206px;
+                    background-color: $blue;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &--check {
+
+                        @include font(1.7rem, 500);
+                        color: #fff;
+                        text-align: center;
+
+                    }
+
+                    &--num {
+                        @include font(5.5rem, 500);
+                        color: #fff;
+                        text-align: center;
+
+                    }
+                }
+
+                &--ttl {
+                    @include top-number-txt;
+                    padding-top: 70px;
+                }
+            }
+
+            // &--catch {
+            //     @include top-ttl;
+
+            //     &--back {
+            //         @include top-white-back;
+
+            //     }
+            // }
+        }
+
+        // 卒業生の画像横並び
+        &--pics {
+            width: 74%;
+            margin-left: 16%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            &--pic1 {
+                position: absolute;
+                display: inline-block;
+                top: 50px;
+                z-index: 0;
+            }
+        }
+
+    }
+
+    &__box {
+        width: 80%;
+        margin-left: 10%;
+        // padding-top: 50px;
+
+
+        &--unit {
+            width: 90%;
+            margin-top: 160px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+
+            &--txt {
+                // padding-top: 19%;
+                // margin-bottom: 22%;
+                width: 56%;
+                @include font(1.25rem, 400);
+                letter-spacing: 0.1rem;
+                line-height: 2.5;
+
+            }
+
+            &--more {
+                width: 30%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+        }
+
+
+    }
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.sec4 {
+    width: 100%;
+    background-color: $bg-gray;
+    color: #2e2e2e;
+
+    &__wrap {
+        width: 69%;
+        margin: 0 auto;
+
+        &--top {
+            width: 35%;
+            color: #2e2e2e;
+
+            &--ttl {
+                padding-top: 260px;
+                margin-bottom: 43px;
+                @include font(3.1rem, 700);
+                letter-spacing: 0.4rem;
+                line-height: 1.4;
+                @include ttl-left-border();
+
+                &::before {
+                    top: 90%;
+                }
+            }
+
+            &--sub {
+                margin-bottom: 190px;
+                @include font();
+                letter-spacing: 0.15rem;
+            }
+        }
+
+        // 質問部分
+        &--box {
+            &--unit {
+                margin-bottom: 130px;
+
+                &--q {
+                    margin-bottom: 30px;
+                    display: flex;
+                    align-items: center;
+
+                    // Qのアイコン
+                    &--icon {
+                        width: 86px;
+                        height: 86px;
+                        padding-top: 30px;
+                        margin-right: 30px;
+                        display: inline-block;
+                        background-image: url('../images/icon/faq/faq-icon.svg');
+                        text-align: center;
+                        @include font(1.6rem);
+                        color: $blue;
+
+                    }
+
+                    &--ttl {
+                        display: block;
+                        @include font(2.2rem);
+                        letter-spacing: 0.08rem;
+                    }
+                }
+
+                &--txt {
+                    padding-left: 116px;
+                    @include font(1.25rem, 400);
+                    letter-spacing: 0.02rem;
+                    line-height: 2;
+                }
+            }
+
+        }
+
+        &--box {
+            &--more {
+                margin-left: 75%;
+                padding-bottom: 330px;
+                padding-top: 30px;
+            }
+        }
+    }
+
+}
+
+
+// アクセス
+.sec5 {
+    width: 100%;
+    color: #2e2e2e;
+
+    &__wrap {
+        width: 69%;
+        margin: 0 auto;
+
+        &--top {
+            width: 35%;
+            color: #2e2e2e;
+
+            &--ttl {
+                padding-top: 260px;
+                margin-bottom: 43px;
+                @include font(3.1rem, 700);
+                letter-spacing: 0.4rem;
+                line-height: 1.4;
+                @include ttl-left-border();
+
+                &::before {
+                    top: 90%;
+                }
+            }
+
+            &--sub {
+                margin-bottom: 140px;
+                @include font();
+                letter-spacing: 0.15rem;
+            }
+        }
+
+        &--map {
+            margin-bottom: 180px;
+
+            &--box {
+                margin-bottom: 80px;
+                position: relative;
+
+
+
+                &--ttl {
+                    margin-bottom: 20px;
+                    @include font(1.25rem);
+                    letter-spacing: 0.15rem;
+                }
+
+                &--wss {
+                    margin-bottom: 20px;
+                    @include font(2.2rem);
+                    letter-spacing: 0.06rem;
+                    position: relative;
+                    left: 25px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        background-color: #2e2e2e;
+                        width: 1px;
+                        height: 288%;
+                        top: 0px;
+                        left: -24px;
+                    }
+                }
+
+                &--txt {
+                    @include font(1rem, 400);
+                    letter-spacing: 0.15rem;
+                    line-height: 1.4;
+                    position: relative;
+                    left: 25px;
+                }
+            }
+
+            &--pic {
+                width: 100%;
+                height: 400px;
+                position: relative;
+
+                & iframe {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+
+        // 運営会社
+        &--company {
+            margin-bottom: 280px;
+
+            &--top {
+                margin-bottom: 85px;
+                text-align: center;
+
+                &--ttl {
+                    margin-bottom: 20px;
+                    @include font(1.25rem);
+                    letter-spacing: 0.15rem;
+                }
+
+                &--nextone {
+                    margin-bottom: 20px;
+                    @include font(2.2rem);
+                    letter-spacing: 0.06rem;
+                }
+
+                &--txt {
+                    @include font(1.25rem);
+                    letter-spacing: 0.15rem;
+                    line-height: 1.4;
+                }
+            }
+
+            &--dl {
+                display: flex;
+                flex-wrap: wrap;
+
+                &--dt {
+                    margin-bottom: 80px;
+                    padding-left: 17%;
+                    width: 26%;
+                    @include font(1rem, 400);
+                    letter-spacing: 0.15rem;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        display: inline-block;
+                        width: 1100px;
+                        height: 1px;
+                        top: -40px;
+                        left: 110px;
+                        border-bottom: dashed 1px #2e2e2e;
+                        // left: -80px;
+
+
+                    }
+
+                }
+
+                &--dd {
+                    padding-left: 8%;
+                    width: 74%;
+                    @include font(1rem, 400);
+                    letter-spacing: 0.15rem;
+
+                    &--link {
+                        color: #2e2e2e;
+
+                        &::after {
+                            content: "";
+                            display: inline-block;
+                            margin: 0 0 3px 5px;
+                            width: 15px;
+                            height: 15px;
+                            vertical-align: middle;
+                            background-image: url('../images/icon/main/main-icon-external-link-bk.svg');
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+
+}
+
+.footer__banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}

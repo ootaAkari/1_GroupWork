@@ -1,0 +1,160 @@
+// 子ページヘッダー-------
+.blue-header {
+    @include blue-header;
+}
+
+.blue-gnav {
+    @include blue-gnav;
+}
+
+.blue-slash {
+    @include blue-slash;
+}
+
+.job__header {
+    @include child-header;
+}
+
+.job__header--wrap--ttl {
+    font-weight: 900;
+}
+
+// 子ページヘッダー終わり------
+
+
+// 就職先のトップ画像と文字
+.main {
+    color: #2e2e2e;
+}
+
+.mvjob {
+    padding-top: 200px;
+    position: relative;
+    display: inline-block;
+
+    &__txt {
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        line-height: 1.5em;
+        @include top-ttl;
+    }
+}
+
+.mvjob__pic {
+    margin-left: 280px;
+}
+
+
+.mvjob__txt span {
+    // font-size: 50px;
+    // background-color:#fff;
+    // line-height: 70px;
+    // font-family: 'Noto Sans JP', sans-serif;
+    @include top-white-back;
+}
+
+// 企業一覧の文字
+.sec1job {
+    background-color: $bg-gray;
+    padding-top: 135px;
+    margin-top: 250px;
+
+    &__ttl {
+        font-size: 35px;
+        letter-spacing: 5px;
+        margin-bottom: 165px;
+        text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
+
+    }
+}
+
+// 企業一覧３社
+.sec1job__box {
+    display: flex;
+    align-items: center;
+    margin: 0 200px 300px 200px;
+
+    // background-color: #000;
+    &-txt {
+        width: 670px;
+        height: 470px;
+    }
+}
+
+.sec1job__pic {
+    margin-right: 135px;
+}
+
+.sec1job__ttl-office {
+    padding-bottom: 30px;
+    @include font(3.1rem, 700);
+    letter-spacing: 0.4rem;
+
+    &-sub {
+        
+        padding-bottom: 50px;
+        @include font(1.562rem, 500);
+        letter-spacing: 0.1rem;
+    }
+
+    &-sub-txt {
+        font-size: 20px;
+        line-height: 50px;
+        padding-bottom: 50px;
+        font-family: 'Noto Sans JP', sans-serif;
+        @include font(1.25rem, 400);
+        letter-spacing: 0.1rem;
+        line-height: 2.5;
+    }
+
+    // &-sub-txt-link {
+    //     font-size: 17px;
+    //     letter-spacing: 1px;
+    //     font-family: 'Noto Sans JP', sans-serif;
+    // }
+}
+
+// 文末
+.sec2job__ttl {
+    padding-bottom: 300px;
+    text-align: center;
+    @include font(2.18rem);
+    letter-spacing: 0.3rem;
+    line-height: 1.6;
+    // line-height: 1.6;
+}
+
+
+// 社名リンク
+.job {
+    &__more {
+        position: relative;
+        color: #2e2e2e;
+        @include font(1.06rem, 500);
+        letter-spacing: 0.2rem;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            margin: 0 0 3px 5px;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            background-image: url('../images/icon/top/top-icon-external-link-k.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            ;
+        }
+
+        &:hover {
+            opacity: 0.85;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+}
